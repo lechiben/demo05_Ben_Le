@@ -1,1 +1,66 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Lightest (Text):         #e0f0ea      (text, contrast with dark)
+* Dark Green (Primary):    #95adbe      
+* Light Green (Secondary): #574f7d      (canvas background)
+* Reddish-Brown (Accent):  #503a65
+*/
+
+.bg-info {
+  background-color: #574f7d !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #95adbe; /* Dark green for brand name & nav links for visibility */
+}
+
+.navbar-brand {
+  font-family: "Caveat", cursive; /*change the font name for what you have*/
+  font-size: 2.25rem;
+}
+
+.btn-info {
+  color: #e0f0ea; /* Lightest shade for text on info button for contrast */
+  background-color: #574f7d; /* Light green for button background */
+  border-color: #503a65; /* Dark green for button border */
+}
+
+.btn-primary {
+  color: #e0f0ea; /* Lightest shade for text */
+  font-size: 150%;
+  background-color: #95adbe; /* Dark green for primary button background */
+  border-color: #503a65; /* Reddish-brown for border to use as accent */
+  border-width: thin;
+}
+
+body {
+  background-color: #e0f0ea; /* Lightest shade for body background to follow the 60% rule */
+}
+
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+  color: #503a65; /* Dark green text color for contrast */
+  border-color: #503a65; /* Light green border color */
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #e0f0ea; /* Lightest color for text */
+  background-color: #574f7d; /* Light green background */
+  border-color: #503a65; /* Dark green border for emphasis */
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  color: #e0f0ea; /* Lightest color for text */
+  background-color: #574f7d; /* Dark green background for primary action */
+  border-color: #503a65; /* Reddish-brown border to use as accent */
+}
